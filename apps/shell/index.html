@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="pt-BR" data-shell="true">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shell · C-137</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module">
+      import { injectIntoGlobalHook } from "http://localhost:4101/@react-refresh";
+      injectIntoGlobalHook(window);
+      window.$RefreshReg$ = () => {};
+      window.$RefreshSig$ = () => (type) => type;
+      window.__vite_plugin_react_preamble_installed__ = true;
+    </script>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

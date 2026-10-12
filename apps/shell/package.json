@@ -1,0 +1,20 @@
+{
+  "name": "@mfe/shell",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@isaac545454/frontend-events": "file:../../vendor/frontend-events",
+    "@isaac545454/nucleo": "file:../../vendor/ds-nucleo-web-components",
+    "@mfe/events": "workspace:*"
+  },
+  "devDependencies": {
+    "@module-federation/vite": "^1.23.4",
+    "typescript": "6.0.3",
+    "vite": "^8.3.4"
+  }
+}

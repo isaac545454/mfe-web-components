@@ -1,0 +1,23 @@
+{
+  "name": "@mfe/locations",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@isaac545454/frontend-events": "file:../../vendor/frontend-events",
+    "@isaac545454/nucleo": "file:../../vendor/ds-nucleo-web-components",
+    "@mfe/events": "workspace:*",
+    "vue": "^3.5.43"
+  },
+  "devDependencies": {
+    "@module-federation/vite": "^1.23.4",
+    "@vitejs/plugin-vue": "^6.0.10",
+    "typescript": "6.0.3",
+    "vite": "^8.3.4",
+    "vue-tsc": "^3.0.8"
+  }
+}

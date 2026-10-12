@@ -1,0 +1,12 @@
+{
+  "name": "mfe-web-components",
+  "private": true,
+  "packageManager": "pnpm@11.0.9",
+  "scripts": {
+    "preinstall": "node scripts/bootstrap.mjs",
+    "postinstall": "pnpm --filter @mfe/events build",
+    "build:libs": "node scripts/bootstrap.mjs && pnpm --filter @mfe/events build",
+    "dev": "pnpm --parallel --filter \"./apps/*\" dev",
+    "build": "pnpm --filter \"./apps/*\" --sequential build"
+  }
+}

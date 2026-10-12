@@ -1,0 +1,85 @@
+:root {
+  color-scheme: light;
+}
+
+:root.dark {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+.rm-page {
+  display: grid;
+  gap: 0.75rem;
+}
+
+html:not([data-shell="true"]) .rm-page {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 1.25rem 1rem 2rem;
+}
+
+.rm-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.rm-heading h1 {
+  margin: 0;
+  font-size: 1.35rem;
+  letter-spacing: -0.03em;
+}
+
+html[data-shell="true"] .rm-standalone {
+  display: none;
+}
+
+.rm-toolbar,
+.rm-meta,
+.rm-pager {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.rm-toolbar n-input {
+  flex: 1 1 12rem;
+}
+
+.rm-cards {
+  display: grid;
+  gap: 0.65rem;
+}
+
+n-scroll-area.rm-list {
+  display: block;
+  height: min(68vh, 36rem);
+}
+
+n-card.rm-pick {
+  cursor: pointer;
+}
+
+n-card.rm-selected,
+n-card.rm-related {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 2px;
+}
+
+.rm-muted {
+  margin: 0;
+  color: hsl(var(--muted-foreground));
+  font-size: 0.875rem;
+}
+
+n-skeleton.rm-block {
+  height: 4.75rem;
+}
